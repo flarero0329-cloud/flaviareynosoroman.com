@@ -1,2 +1,3 @@
-flaviareynosoroman.html
-selected-works.html
+/mi-web/
+- flaviareynosoroman.html
+- selected-works.html
