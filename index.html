@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavia Reynoso Román</title>
+    <style>
+        /* Estilo general de la página */
+        body {
+            margin-bottom: 0px;
+            font-family: 'Helvetica Neue', sans-serif;
+            background: white;
+            color: #111;
+            text-align: center;
+        }
+
+        /* Título principal */
+	header{
+	    padding:20px 10%;
+	}
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 2vw;
+            margin: 20px 0 40px 0;
+        }
+
+        /* Menú principal */
+        nav {
+            margin-bottom: 0px;
+        }
+
+	header{
+	padding:40px 80px;
+	}
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2vw;
+            padding: 0;
+            font-size: 3vw;
+            letter-spacing: 0.5vw;
+            text-transform: uppercase;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+	    transform:translateX(-50%);
+            background: white;
+            padding: 10px 0;
+            list-style: none;
+            min-width: 200px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	    z-index:10;
+
+        }
+
+        .submenu li {
+            padding: 5px 15px;
+        }
+
+        .submenu a {
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .dropdown:hover .submenu {
+            display: block;
+        }
+
+        /* Imágenes centradas y max-width */
+        .content img {
+            width: 100%; max-width: 50%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        /* Párrafos centrados y espaciados */
+        .content p {
+            text-decoration:none;
+	    color:#666;
+	    font-size:3vw;
+	    letter-spacing:0.2vw;
+	    text-transform:uppercase;
+	    font-family:inherit;
+            line-height: 1.6;
+	    padding: 0 5%;
+        }
+
+
+/* Media query para pantallas grandes (> 768px) */
+@media (min-width: 768px) {
+    .menu {
+        font-size: 10px;
+        letter-spacing: 5px;
+        gap: 40px;
+    }
+
+    .title {
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+
+    .content p {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .content img {
+        max-width: 50%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">FLAVIA REYNOSO ROMÁN</h1>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Personal</a>
+                    <ul class="submenu">
+                        <li><a href="selected-works.html">Selected Works</a></li>
+                        <li><a href="sketchbooks.html">Sketchbooks</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Western Sahara</a>
+                    <ul class="submenu">
+                        <li><a href="phenomenology.html">The Phenomenology of the Sahrawi Dwelling</a></li>
+                        <li><a href="dwelling-resilience.html">Dwelling as Cultural Resilience and the Transmission of Identity: The Haima as an Archive, Memory and Sense of Belonging of the Sahrawi People</a></li>
+                    </ul>
+                </li>
+		 <li class="dropdown">
+                    <a href="#">ARCHITECTURE</a>
+                    <ul class="submenu">
+                        <li><a href="Käserei-in-den-Alpen.html">Käserei in den Alpen</a></li>
+                        <li><a href="archivo-comarcal.html">Archivo Comarcal</a></li>
+			<li><a href="escuela-interfaz.html">Escuela Interfaz</a></li>
+                    </ul>
+                </li>
+ 		<li class="dropdown">
+                    <a href="#">URBANISM AND LANDSCAPE</a>
+                    <ul class="submenu">
+                        <li><a href="water-sensitiv.html">Water Sensitiv</a></li>
+                        <li><a href="highlight.html">Highlight</a></li>
+			<li><a href="beyond-commons.html">Beyond Commons</a></li>
+                    </ul>
+                </li>
+ 		<li class="dropdown">
+                    <a href="#">REHABILITATION</a>
+                    <ul class="submenu">
+                        <li><a href="presidio-trafaria.html">Presidio de Trafaria</a></li>
+			<li><a href="masflow-school.html">Masflow School</a></li>
+                    </ul>
+                </li>
+		<li class="dropdown">
+                    <a href="#">Photography</a>
+                    <ul class="submenu">
+                        <li><a href="spaces-places.html">Spaces and Places</a></li>
+			<li><a href="connection.html">Conection</a></li>
+			<li><a href="color.html">Color</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="https://www.instagram.com/flavia_re2" target="_blank">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <img src="pinturas/dospuntos.jpeg" alt="dospuntos">
+        <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAA</p>
+    </main>
+
+</body>
+</html>
