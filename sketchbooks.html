@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKETCHBOOKS</title>
+    <style>
+        /* Base idéntica a la página principal */
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background: white;
+            color: #111;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px 10%;
+        }
+
+        .title {
+            font-size: 6vw;
+            font-weight: bold;
+            letter-spacing: 2vw;
+            margin: 20px 0 40px 0;
+        }
+
+        nav {
+            margin-bottom: 0;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2vw;
+            padding: 0;
+            font-size: 3vw;
+            letter-spacing: 0.5vw;
+            text-transform: uppercase;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 10px 0;
+            list-style: none;
+            min-width: 200px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            z-index: 10;
+        }
+
+        .submenu li {
+            padding: 5px 15px;
+        }
+
+        .submenu a {
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .dropdown:hover .submenu {
+            display: block;
+        }
+
+        main {
+            padding: 20px 5%;
+        }
+
+        .content img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .content p {
+            color: #666;
+            font-size: clamp(12px, 2vw, 18px);
+            letter-spacing: 0.2vw;
+            text-transform: uppercase;
+            font-family: inherit;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .files {
+            margin: 20px 0;
+        }
+
+        .files a {
+            display: block;
+            margin: 10px 0;
+            color: #666;
+            text-decoration: none;
+            font-size: 3vw;
+        }
+
+        .files a:hover {
+            color: black;
+        }
+
+        /* Media queries para pantallas grandes */
+        @media (min-width: 768px) {
+            .menu {
+                font-size: 10px;
+                letter-spacing: 5px;
+                gap: 40px;
+            }
+
+            .title {
+                font-size: 40px;
+                letter-spacing: 10px;
+            }
+
+            .content p {
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+
+            .files a {
+                font-size: 10px;
+            }
+
+            .content img {
+                max-width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="title">SKETCHBOOKS</h1>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Personal</a>
+                <ul class="submenu">
+                    <li><a href="selected-works.html">Selected Works</a></li>
+                    <li><a href="sketchbooks.html">Sketchbooks</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Western Sahara</a>
+                <ul class="submenu">
+                    <li><a href="phenomenology.html">The Phenomenology of the Sahrawi Dwelling</a></li>
+                    <li><a href="dwelling-resilience.html">Dwelling as Cultural Resilience and the Transmission of Identity: The Haima as an Archive, Memory and Sense of Belonging of the Sahrawi People</a></li>
+                    </ul>
+                </li>
+		 <li class="dropdown">
+                    <a href="#">ARCHITECTURE</a>
+                    <ul class="submenu">
+                        <li><a href="Käserei-in-den-Alpen.html">Käserei in den Alpen</a></li>
+                        <li><a href="archivo-comarcal.html">Archivo Comarcal</a></li>
+			<li><a href="escuela-interfaz.html">Escuela Interfaz</a></li>
+                    </ul>
+                </li>
+ 		<li class="dropdown">
+                    <a href="#">URBANISM AND LANDSCAPE</a>
+                    <ul class="submenu">
+                        <li><a href="water-sensitiv.html">Water Sensitiv</a></li>
+                        <li><a href="highlight.html">Highlight</a></li>
+			<li><a href="beyond-commons.html">Beyond Commons</a></li>
+                    </ul>
+                </li>
+ 		<li class="dropdown">
+                    <a href="#">REHABILITATION</a>
+                    <ul class="submenu">
+                        <li><a href="presidio-trafaria.html">Presidio de Trafaria</a></li>
+			<li><a href="masflow-school.html">Masflow School</a></li>
+                    </ul>
+                </li>
+		<li class="dropdown">
+                    <a href="#">Photography</a>
+                    <ul class="submenu">
+                        <li><a href="spaces-places.html">Spaces and Places</a></li>
+			<li><a href="connection.html">Conection</a></li>
+			<li><a href="color.html">Color</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="content">
+
+    <p>FLAVIA REYNOSO ROMÁN</p>
+    <p>PLACES I HAVE INHABITED, PEOPLE I HAVE LOVED AND THINGS THAT CAPTURED ME. ALWAYS THANKFUL.</p>
+
+    <p>Note: raw sketches of life, almost all of them are made on site.</p>
+    <p>as life goes, some were never finished. sometimes things do not have to be.</p>
+    <p>- they do not follow any coherent sequence, moving back and forth in time -</p>
+
+     <div class="files">
+
+	 <img src="sketchbooks-2/plaza de armas.jpg">
+	 <img src="sketchbooks-2/pensamientos.jpg">
+      	 <img src="sketchbooks/islandia.jpg">
+	 <img src="sketchbooks/avion canarias santi.jpg">
+	 <img src="sketchbooks-4/carrer palomar 8.jpg">
+	 <img src="sketchbooks/avion krkw.jpg">
+	 <img src="sketchbooks/avion stuttbarna.jpg">
+	 <img src="sketchbooks/bar LaCamila.jpg">
+	 <img src="sketchbooks/basel.jpg">
+	 <img src="sketchbooks/berghain garten.jpg">
+	 <img src="sketchbooks/bern.jpg">
+	 <img src="sketchbooks/bk.jpg">
+	 <img src="sketchbooks-2/meri conduciendo.jpg">
+	 <img src="sketchbooks-2/mistral.jpg">
+	 <img src="sketchbooks-2/mo.png">
+	 <img src="sketchbooks-2/museum insel.jpg">
+	 <img src="sketchbooks-2/neuchatel.jpg">
+	 <img src="sketchbooks-2/neu.jpg">
+	 <img src="sketchbooks-2/notredame.jpg">
+	 <img src="sketchbooks-2/opera.jpg">
+	 <img src="sketchbooks-2/pantheon.jpg">
+	 <img src="sketchbooks-2/paul loebe.jpg">
+	 <img src="sketchbooks-2/pompideu.jpg">
+	 <img src="sketchbooks-2/sacre oucre.jpg">
+	 <img src="sketchbooks-2/sagrada familia.jpg">
+	 <img src="sketchbooks-2/technischemechanik I.jpg">
+	 <img src="sketchbooks-3/fildi.jpg">
+	 <img src="sketchbooks-3/hab coru.jpg">
+	 <img src="sketchbooks-3/hab villaperfectas.jpg">
+	 <img src="sketchbooks-3/james craig galerie.jpg">
+	 <img src="sketchbooks-3/kebab hackeschemarkt.jpg">
+	 <img src="sketchbooks-3/kmi.jpg">
+	 <img src="sketchbooks-3/lago.jpg">
+	 <img src="sketchbooks-3/les filles.jpg">
+	 <img src="sketchbooks-3/louvre.jpg">
+	 <img src="sketchbooks-4/bolas.jpg">
+	 <img src="sketchbooks-4/cafe london.jpg">
+	 <img src="sketchbooks-4/camana.jpg">
+	 <img src="sketchbooks-4/carrer palomar.jpg">
+	 <img src="sketchbooks-4/casa eli.jpg">
+	 <img src="sketchbooks-4/circus.jpg">
+	 <img src="sketchbooks-4/cocina isa.jpg">
+	 <img src="sketchbooks-4/comedor camper.jpg">
+	 <img src="sketchbooks-4/despedida navidad.jpg">
+	 <img src="sketchbooks-4/el faro.png">
+	 <img src="sketchbooks-4/etsac clase chedi.jpg">
+	 <img src="sketchbooks-5/terr circus.jpg">
+	 <img src="sketchbooks-5/torre de hercules.jpg">
+	 <img src="sketchbooks-5/torre louvre.jpg">
+	 <img src="sketchbooks-5/UZurich.jpg">
+	 <img src="sketchbooks-5/vuelo lima aqp.jpg">
+	 <img src="sketchbooks-5/vuelo mad lima.jpg">
+	 <img src="sketchbooks-5/vuelo.jpg">
+	 <img src="sketchbooks-5/window to pompideu.jpg">
+	 <img src="sketchbooks-5/yanahuara.jpg">
+	 <img src="sketchbooks-5/zug.jpg">
+	 <img src="sketchbooks-5/Zurich.jpg">
+         <img src="sketchbooks/admiralstr.jpg">
+	 <img src="sketchbooks-5/zurichhh.jpg">
+	 <img src="sketchbooks/aeropuerto lima.jpg">
+   	 <img src="sketchbooks/aeropuerto mad T1.jpg">
+	 <img src="sketchbooks-6/IMG_9442.jpg">
+	 <img src="sketchbooks-6/IMG_9443.jpg">
+	 <img src="sketchbooks-6/IMG_9444.jpg">
+	 <img src="sketchbooks-6/IMG_9445.jpg">
+	 <img src="sketchbooks-6/IMG_9446.jpg">
+	 <img src="sketchbooks-6/IMG_9447.jpg">
+	 <img src="sketchbooks-6/IMG_9448.jpg">
+	 <img src="sketchbooks-6/IMG_9449.jpg">
+	 <img src="sketchbooks-6/IMG_9450.jpg">
+	 <img src="sketchbooks-6/IMG_9451.jpg">
+	 <img src="sketchbooks-6/IMG_9452.jpg">
+	 <img src="sketchbooks-6/IMG_9453.jpg">
+	 <img src="sketchbooks-6/IMG_9454.jpg">
+
+	 <img src="sketchbooks-7/a.jpg">
+	 <img src="sketchbooks-8/a.jpg">
+
+
+
+
+
+    </div>
+
+    <p>i started this series in 2021; last updated February 2026</p>
+
+    <p>BY FLAVIA REYNOSO ROMÁN</p>
+
+</main>
+
+</body>
+</html>
